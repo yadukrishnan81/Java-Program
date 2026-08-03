@@ -1,31 +1,29 @@
 public class Vehicle
 {
-    private String name;
-    private String brand;
-    private int model;
-    private String color;
-    private int price;
+    String name;
+    String brand;
+    int model;
+    String color;
+    double price;
 
-    public void setname(String name)
+    // Parameterized Constructor
+    public Vehicle(String name, String brand, int model, String color, double price)
     {
-        System.out.println(name);
-    }
-    public void setbrand(String brand)
-    {
-        System.out.println(brand);
-    }
-    public void setcolor(String color)
-    {
-        System.out.println(color);
-    }
-    public void setmodel(int model)
-    {
-        System.out.println(model);
-    }
-    public void setprice(int price)
-    {
-        System.out.println(price);
+        this.name = name;
+        this.brand = brand;
+        this.model = model;
+        this.color = color;
+        this.price = price;
     }
 
-    
+    // Display Method
+    public void display()
+    {
+        System.out.println("Name  : " + name);
+        System.out.println("Brand : " + brand);
+        System.out.println("Model : " + model);
+        System.out.println("Color : " + color);
+        System.out.println("Price : " + price);
+        System.out.println();
+    }
 }
